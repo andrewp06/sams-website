@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700;400&display=swap'); */
 
 html, body {
   overflow-y: scroll;     /* allow vertical scrolling */
@@ -9,7 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Cabin', system-ui, sans-serif;
+  /* font-family: 'Cabin', system-ui, sans-serif; */
   
 }
 
