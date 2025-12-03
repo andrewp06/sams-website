@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700;400&display=swap');
+
+html, body {
+  overflow-y: scroll;     /* allow vertical scrolling */
+  overflow-x: hidden;     /* disable horizontal scrolling */
+  scrollbar-width: none;  /* hide scrollbar in Firefox */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Cabin', system-ui, sans-serif;
+  
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;          /* hide scrollbar in Chrome/Safari/Edge */
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(171, 181, 121);
+}
+
+h1 {
+  color: rgb(112, 120, 73);
+  font-style: normal;
+}
+
+.text-box {
+  background-color: rgb(171, 181, 121);
+}

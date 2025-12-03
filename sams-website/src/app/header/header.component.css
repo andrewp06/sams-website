@@ -1,0 +1,11 @@
+.main-photo {
+  width: 100vw;
+  height: 100vh;       /* Full screen height */
+  overflow: hidden;
+}
+
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Image covers entire screen */
+}
