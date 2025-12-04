@@ -11,21 +11,24 @@
 
         <!-- Only show close button on mobile -->
         <div style="text-align: right; padding-top: 25vh;">
-            <button *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
-                Close
+            <button class="menu-button" *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
+                ‹ 
             </button>
         </div>
         
       </mat-drawer>
 
-      <mat-drawer-content class="content">
+      <mat-drawer-content class="drawer">
 
         <!-- Only show open toggle button on mobile -->
-        <button *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
-          Menu
+        <button class="menu-button" *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
+          ☰
         </button>
 
-        <router-outlet></router-outlet>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+
 
       </mat-drawer-content>
 

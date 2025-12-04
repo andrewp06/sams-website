@@ -5,8 +5,8 @@
 }
 
 .content {
-    padding-top: 10vh;
-    padding-left: 7.5vw;
+    padding-top: 1vh;
+    padding-left: 7vw;
     padding-right: 5vw;
     background: white;
 }
@@ -21,4 +21,18 @@
 
 .nav-drawer {
     background-color: rgb(171, 181, 121);
+}
+
+.menu-button {
+    border: none;
+    background: none;
+    font-size: 40pt;
+    color: rgb(112, 120, 73);
+}
+
+.drawer {
+    padding-top: 2vh;
+    padding-right: 2vw;
+    background: white;
+
 }
