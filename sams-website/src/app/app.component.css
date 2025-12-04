@@ -2,13 +2,3 @@
     margin: 0px;
     padding: 0px;
 }
-
-.bottom {
-    display: flex;
-}
-
-.content {
-    padding-top: 10vh;
-    padding-left: 7.5vw;
-    padding-right: 5vw;
-}

@@ -1,0 +1,24 @@
+
+.bottom {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    padding-top: 10vh;
+    padding-left: 7.5vw;
+    padding-right: 5vw;
+    background: white;
+}
+
+.example-container {
+  height: 100vh;      /* full viewport height */
+  width: 100%;        /* full width */
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-drawer {
+    background-color: rgb(171, 181, 121);
+}

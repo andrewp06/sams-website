@@ -1,8 +1,6 @@
 .navbar {
-    height: 100vh;       /* Full screen height */
     width: 20vw;
     overflow: hidden;
-    background-color: rgb(171, 181, 121);
     padding: auto;
 }
 
@@ -11,6 +9,7 @@
   margin-left: 2.5vh;
   margin-top: 2.5vh;
   text-align: left;     /* keeps text left-justified */
+  line-height: 1.5;
 }
 
 nav a {
