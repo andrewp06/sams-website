@@ -8,5 +8,6 @@ export const routes: Routes = [
     {path: "photos", component: PhotosComponent},
     {path: "contact", component: ContactPageComponent},
     {path: "about", component: AboutPageComponent},
-    {path: "shop", component: ShopComponent}
+    {path: "shop", component: ShopComponent},
+    { path: '', redirectTo: 'about', pathMatch: 'full' }
 ];
