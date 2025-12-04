@@ -1,16 +1,33 @@
-  <div class="bottom">
+<div class="bottom">
     <mat-drawer-container class="example-container">
 
-      <mat-drawer class="nav-drawer"
-                  mode="side"
-                  opened="true">
+      <mat-drawer
+        #drawer
+        class="nav-drawer"
+        [mode]="drawerMode()"
+        [opened]="drawerOpened()">
+
         <app-nav-bar></app-nav-bar>
+
+        <!-- Only show close button on mobile -->
+        <div style="text-align: right; padding-top: 25vh;">
+            <button *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
+                Close
+            </button>
+        </div>
+        
       </mat-drawer>
 
       <mat-drawer-content class="content">
+
+        <!-- Only show open toggle button on mobile -->
+        <button *ngIf="isMobile()" mat-button (click)="drawer.toggle()">
+          Menu
+        </button>
+
         <router-outlet></router-outlet>
+
       </mat-drawer-content>
 
     </mat-drawer-container>
   </div>
-
