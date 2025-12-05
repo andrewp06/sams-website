@@ -22,11 +22,11 @@
 }
 
 h1 {
-  font-size: clamp(1rem, 16vw, 80pt);
+  font-size: clamp(1rem, 12vw, 80pt);
   color: rgb(220, 227, 190);
-  margin-bottom: clamp(10px, 10vw, 80px);
+  margin-bottom: clamp(10px, 7.5vw, 80px);
 }
 
 .schlosser {
-  font-size: clamp(1rem, 20vw, 100pt);
+  font-size: clamp(1rem, 15vw, 100pt);
 }
