@@ -23,7 +23,7 @@
 
 h1 {
   font-size: clamp(1rem, 16vw, 80pt);
-  color: rgb(112, 120, 73);
+  color: rgb(220, 227, 190);
   margin-bottom: clamp(10px, 10vw, 80px);
 }
 

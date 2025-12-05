@@ -1,6 +1,12 @@
 
+html, body, h1 {
+  font-family: 'gillSansUB', Fallback, sans-serif !important;
+}
 
-/* @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700;400&display=swap'); */
+@font-face {
+  font-family: 'gillSansUB';
+  src: url('assets/fonts/gillSansUB.otf') format('opentype');
+}
 
 html, body {
   overflow-y: scroll;     /* allow vertical scrolling */
@@ -24,12 +30,13 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-style: normal;
   color: rgb(112, 120, 73);
 }
 
 .text-box {
   background-color: rgb(171, 181, 121);
 }
+
+
 
 
