@@ -5,18 +5,22 @@
 }
 
 .content {
+    flex: 1 1 auto;        /* fill remaining space */
+    overflow-y: auto;
     padding-top: 1vh;
     padding-left: 7vw;
     padding-right: 5vw;
     background: white;
+    text-align: left;
+
 }
 
 .example-container {
-  height: 100vh;      /* full viewport height */
-  width: 100%;        /* full width */
-  display: block;
-  margin: 0;
-  padding: 0;
+    height: 100%;      /* full viewport height */
+    width: 100%;        /* full width */
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-drawer {
@@ -24,6 +28,8 @@
 }
 
 .menu-button {
+    display: block;        /* break out of inline centering */
+    margin-right: auto;    /* push it to the left */
     border: none;
     background: none;
     font-size: 40pt;
@@ -31,8 +37,19 @@
 }
 
 .drawer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 2vh;
     padding-right: 2vw;
     background: white;
 
+    text-align: left;        /* force left-justified text */
+    align-items: stretch;    /* prevent centering */
+}
+
+@media (min-width: 768px){
+    .content {
+        padding: 2.5vw;
+    }
 }
