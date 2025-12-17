@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -8,7 +7,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-photos',
   standalone: true,
   imports: [
-    HttpClientModule,
     CommonModule,
     RouterLink,
     RouterLinkActive
@@ -26,6 +24,8 @@ export class PhotosComponent {
     this.http.get<string[]>('assets/photos/photos.json')
       .subscribe(ids => {
         this.images = ids;
+        console.log(this.images)
       });
+    
   }
 }

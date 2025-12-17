@@ -2,7 +2,7 @@
 
 
 <div class="gallery">
-    <a class="tile" *ngFor="let id of images" [routerLink] = id routerLinkActive="active">
+    <a class="tile" *ngFor="let id of images" [routerLink] = "[id]" routerLinkActive="active">
         <img
         [src]="'assets/photos/' + id + '.jpg'"
         alt=""
