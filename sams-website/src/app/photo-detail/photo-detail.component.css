@@ -1,0 +1,13 @@
+.back {
+    color: rgb(220, 227, 190);
+    background-color: rgb(171, 181, 121);
+    border:none;
+    border-radius: 12px;
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-height:85vh;
+    max-width: 90vw;
+}

@@ -3,11 +3,13 @@ import { PhotosComponent } from './photos/photos.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ShopComponent } from './shop/shop.component';
+import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
 
 export const routes: Routes = [
     {path: "photos", component: PhotosComponent},
     {path: "contact", component: ContactPageComponent},
     {path: "about", component: AboutPageComponent},
     {path: "shop", component: ShopComponent},
-    { path: '', redirectTo: 'about', pathMatch: 'full' }
+    {path: '', redirectTo: 'photos', pathMatch: 'full' },
+    {path: "photos/:id", component: PhotoDetailComponent}
 ];

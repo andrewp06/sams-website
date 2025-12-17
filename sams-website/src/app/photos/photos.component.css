@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tile {
+  display: block;
+  overflow: hidden;
+}
+
+.tile img {
+  width: auto;
+  max-width: 90vw;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
