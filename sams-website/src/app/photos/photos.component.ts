@@ -16,16 +16,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class PhotosComponent {
 
-  images: string[] = [];
+  images$ = this.http.get<string[]>(
+    new URL('assets/photos/photos.json', document.baseURI).toString()
+  );
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-    this.http.get<string[]>('assets/photos/photos.json')
-      .subscribe(ids => {
-        this.images = ids;
-        console.log(this.images)
-      });
-    
-  }
 }

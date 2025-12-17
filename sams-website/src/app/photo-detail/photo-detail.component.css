@@ -1,5 +1,5 @@
 .back {
-    color: rgb(171, 181, 121);
+    color:  rgb(112, 120, 73);
     background: none;
     border:none;
     border-radius: 12px;
@@ -8,6 +8,6 @@
 }
 
 .image {
-    max-height:85vh;
+    max-height:75vh;
     max-width: 90vw;
 }
